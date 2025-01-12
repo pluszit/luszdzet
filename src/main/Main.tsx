@@ -15,6 +15,7 @@ export const Main = () => {
             .then((querySnapshot)=>{
                 const newData = querySnapshot.docs
                     .map((doc) => ({...doc.data(), id:doc.id }));
+                // @ts-expect-error need to fix this
                 setTodos(newData);
                 console.log(todos, newData);
             })
