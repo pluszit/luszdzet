@@ -15,7 +15,7 @@ export const Login = () => {
         try {
             setError("");
             await login(email, password);
-            navigate("/luszdzet/main");
+            navigate("/main");
         } catch (err) {
             setError("Nie udało się zalogować");
         }

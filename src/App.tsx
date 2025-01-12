@@ -11,9 +11,9 @@ function App() {
         <AuthProvider>
             <HashRouter basename="/">
                 <Routes>
-                    <Route path="/luszdzet/login" element={<Login />} />
+                    <Route path="/login" element={<Login />} />
                     <Route
-                        path="/luszdzet/main"
+                        path="/main"
                         element={
                             <PrivateRoute>
                                 <Main />
