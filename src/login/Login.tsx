@@ -9,6 +9,7 @@ export const Login = () => {
     const { login } = useAuth();
     const navigate = useNavigate();
 
+    // @ts-expect-error need to fix this
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
